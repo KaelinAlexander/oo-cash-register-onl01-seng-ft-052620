@@ -12,7 +12,7 @@ prices = []
   items.collect.each do |item, price|
   prices << price
   end
-  price.each do |
+  prices.inject(0) {|sum, i|  sum + i }
 end
     
 end
