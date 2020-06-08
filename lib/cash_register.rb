@@ -10,11 +10,11 @@ def self.total
 
 end
 
-def add_item(item)
+def self.add_item(item)
 
 end
 
-def items
+def self.items
   
 end
 
