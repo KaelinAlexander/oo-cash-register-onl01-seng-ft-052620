@@ -9,5 +9,9 @@ end
 def self.total
 
 end
+
+def add_item(item)
+
+end
   
 end 
