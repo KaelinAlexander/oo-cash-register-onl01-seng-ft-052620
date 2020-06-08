@@ -20,7 +20,6 @@ end
 
 def apply_discount
   discount = @total*.2
-  
 end 
 
 def void_last_item
