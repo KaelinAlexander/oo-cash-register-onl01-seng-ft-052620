@@ -12,7 +12,9 @@ attr_accessor :total, :discount, :items, :last_transaction
     items.collect.each do |item, price|
     prices << price
     end
-    prices.inject(0) {|sum, i|  sum + i }
+  prices.inject(0) {|sum, i|  sum + i }
+  total = total + prices
+  total
   end
 
   def add_item(item)
