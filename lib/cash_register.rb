@@ -7,7 +7,7 @@ def initialize
 end
 
 def total
-
+  @total = each.do 
 end
 
 def add_item(item)
