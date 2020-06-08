@@ -20,7 +20,7 @@ attr_accessor :total, :discount, :items, :last_transaction
   end
 
   def items
-    
+  
   end
 
   def apply_discount
