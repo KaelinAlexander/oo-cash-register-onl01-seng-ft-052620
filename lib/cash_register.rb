@@ -1,13 +1,13 @@
 class CashRegister
-attr_accessor :total
+attr_accessor :total :price
 
 def initialize
   @total = 0
   discount = self.new - self.new*.2
 end
 
-self.total
+def self.total
 
-end 
+end
   
 end 
