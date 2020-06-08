@@ -1,5 +1,6 @@
 class CashRegister
-attr_accessor :total :price
+attr_accessor :total :items
+@items = {}
 
 def initialize
   @total = 0
@@ -7,7 +8,8 @@ def initialize
 end
 
 def total
-  @total = each.do 
+  @total = items.each do |k,v|
+    
 end
 
 def add_item(item)
