@@ -6,15 +6,15 @@ def initialize
   discount = self.new - self.new*0.2
 end
 
-def self.total
+def total
 
 end
 
-def self.add_item(item)
+def add_item(item)
 
 end
 
-def self.items
+def items
   
 end
 
