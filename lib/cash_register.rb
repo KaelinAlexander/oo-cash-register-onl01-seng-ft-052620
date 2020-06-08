@@ -8,6 +8,7 @@ def initialize
 end
 
 def total
+  running_total = []
   @total = items.each do |k,v|
     
 end
