@@ -19,16 +19,16 @@ attr_accessor :total, :items
   
   end
 
-def items
+  def items
+    
+  end
+
+  def apply_discount
   
-end
+  end 
 
-def apply_discount
-
-end 
-
-def void_last_item
-  
-end
+  def void_last_item
+    
+  end
 
 end
