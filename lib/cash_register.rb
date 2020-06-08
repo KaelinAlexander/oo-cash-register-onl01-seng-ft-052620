@@ -12,6 +12,7 @@ attr_accessor :total, :discount, :items, :last_transaction
       self_total = price * quantity
     else
       self_total = price
+    end
     total = total + self_total
     items << title
     items << self_total
