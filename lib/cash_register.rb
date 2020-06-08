@@ -14,12 +14,10 @@ attr_accessor :total, :items
     end
     prices.inject(0) {|sum, i|  sum + i }
   end
-    
-end
 
-def add_item(item)
-
-end
+  def add_item(item)
+  
+  end
 
 def items
   
