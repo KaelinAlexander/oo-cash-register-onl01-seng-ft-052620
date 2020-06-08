@@ -3,7 +3,7 @@ attr_accessor :total :price
 
 def initialize
   @total = 0
-  discount = self.new - self.new*.2
+  discount = self.new - self.new*0.2
 end
 
 def self.total
