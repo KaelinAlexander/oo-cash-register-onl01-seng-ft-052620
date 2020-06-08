@@ -28,10 +28,12 @@ attr_accessor :total, :discount, :items, :last_transaction
   end
 
   def apply_discount
-    if @discount != 0
+    if @discount == 0
+      puts "There is no discount to apply."
+    else
       total = total * 0.8
+      total
     end
-    total
   end 
 
   def void_last_item
