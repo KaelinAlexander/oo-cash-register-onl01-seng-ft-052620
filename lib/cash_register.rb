@@ -18,11 +18,12 @@ attr_accessor :total, :discount, :items, :last_transaction
   end
 
   def add_item(name, price, quantity=1)
-    
+    self_total = price * quantity
+    items 
   end
 
   def items
-    
+    return 
   end
 
   def apply_discount
