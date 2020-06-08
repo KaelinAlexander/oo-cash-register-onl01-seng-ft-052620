@@ -18,10 +18,6 @@ attr_accessor :total, :discount, :items, :last_transaction
     self.last_transaction = [title, self_total]
   end
 
-  def items
-    @items = []
-  end
-
   def apply_discount
     if @discount == 0
       puts "There is no discount to apply."
