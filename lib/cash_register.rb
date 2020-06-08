@@ -13,7 +13,7 @@ attr_accessor :total, :discount, :items, :last_transaction
     else
       self_total = price.to_i
     end
-    total = total + self_total
+    total += self_total
     items << title
     items << self_total
     self.last_transaction = [title, self_total]
@@ -27,9 +27,9 @@ attr_accessor :total, :discount, :items, :last_transaction
     if @discount == 0
       puts "There is no discount to apply."
     else
-      total = total * 0.8
-      total
+      discounted_total = total * 0.8
     end
+    discounted_total
   end 
 
   def void_last_item
