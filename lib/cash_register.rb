@@ -13,5 +13,8 @@ end
 def add_item(item)
 
 end
+
+def apply_discount
+  discount = @total*.2
   
 end 
