@@ -4,27 +4,19 @@ attr_accessor :total, :discount, :items, :last_transaction
   def initialize(discount = 0)
     @total = 0
     @discount = discount
-    @items = {}
-  end
-
-  def total
-  prices = []
-    items.collect.each do |item, price|
-    prices << price
-    end
-  prices.inject(0) {|sum, i|  sum + i }
-  new_total = total + prices
-  new_total
+    @items = []
   end
 
   def add_item(title, price, quantity=1)
     self_total = price * quantity
-    items[title] = self_total
-    self.last_transaction = {title => self_total}
+    total += self_total
+    items << title
+    items << self_total
+    self.last_transaction = [title, self_total]
   end
 
   def items
-    items
+    
   end
 
   def apply_discount
