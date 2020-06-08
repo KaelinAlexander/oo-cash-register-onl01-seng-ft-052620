@@ -13,8 +13,8 @@ attr_accessor :total, :discount, :items, :last_transaction
     prices << price
     end
   prices.inject(0) {|sum, i|  sum + i }
-  total = total + prices
-  total
+  new_total = total + prices
+  new_total
   end
 
   def add_item(item)
