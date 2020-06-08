@@ -16,7 +16,7 @@ attr_accessor :total, :discount, :items
   end
 
   def add_item(item)
-  
+    
   end
 
   def items
