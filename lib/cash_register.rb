@@ -8,8 +8,9 @@ def initialize
 end
 
 def total
-  running_total = []
-  @total = items.each do |k,v|
+  running_total = items.collect do |item ,price|
+  price
+  end
     
 end
 
