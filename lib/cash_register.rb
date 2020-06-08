@@ -25,6 +25,6 @@ end
 
 def void_last_item
   
-send_data
+end
 
 end
